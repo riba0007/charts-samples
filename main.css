@@ -7,10 +7,11 @@ body {
     color: #555;
 }
 .review {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-color: #ddd;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid none solid none;
     padding: 1rem 1rem 2.5rem 3rem;
-    background: #fdfdfd;
+    background-color: #fdfdfd;
 }
 .review spam {
     font-weight: 600;
