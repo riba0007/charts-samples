@@ -20,12 +20,14 @@ fetch( "../data.json" )
     // Callback function for pie chart
     function drawPieChart(){
         
+        //Convert json to be read by Google Chart
         let _data = [["country","percentage"]].concat( jsonData.corn_production.map( item => [ item.country , item.world_percentage ]));
         
         let data = google.visualization.arrayToDataTable( _data );
         
         let options = {
-            title: 'Corn Production'
+            title: 'Corn Production',
+            is3D: true
         };
         
         let chart = new google.visualization.PieChart( document.getElementById( 'pieChart' ));
@@ -37,6 +39,7 @@ fetch( "../data.json" )
     // Callback function for line chart
     function drawLineChart(){
         
+        //Convert json to be read by Google Chart
         let data = new google.visualization.DataTable();
         data.addColumn('number', 'Year');
         data.addColumn('number', '0 to 14 years');
@@ -55,9 +58,14 @@ fetch( "../data.json" )
         data.addRows( _data );
         
         let options = {
-          title: 'Population by Age',
-          curveType: 'function',
-          legend: { position: 'bottom' }
+            title: 'Population by Age',
+            curveType: 'function',
+            legend: { position: 'bottom' },
+            animation:{
+                startup: true,
+                duration: 1000,
+                easing: 'out'
+            }
         };
 
         let chart = new google.visualization.LineChart(document.getElementById('lineChart'));

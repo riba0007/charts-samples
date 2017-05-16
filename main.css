@@ -6,3 +6,17 @@ body {
     padding: 4em 1em;
     color: #555;
 }
+.review {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 1rem 2.5rem 3rem;
+    background: #fdfdfd;
+}
+.review spam {
+    font-weight: 600;
+    color: #9595a2;
+}
+footer {
+    font-size: 0.85rem;
+    margin-top: 7rem;
+}
