@@ -1,0 +1,61 @@
+{
+    "population": {
+        "1995": {
+            "_0_to_14_years":5975,
+            "_65_years_and_older":3506
+        },
+        "2000": {
+            "_0_to_14_years":5885,
+            "_65_years_and_older":3844
+        },
+        "2005": {
+            "_0_to_14_years":5699,
+            "_65_years_and_older":4206
+        },
+        "2010": {
+            "_0_to_14_years":5624,
+            "_65_years_and_older":4796
+        },
+        "2015": {
+            "_0_to_14_years":5749,
+            "_65_years_and_older":5781
+        },
+        "2020": {
+            "_0_to_14_years":6136,
+            "_65_years_and_older":6857
+        },
+        "2025": {
+            "_0_to_14_years":6412,
+            "_65_years_and_older":8117
+        }
+    },
+    "corn_production": [{
+        "country": "United States of America",
+        "production": 313948610,
+        "world_percentage": 35.5
+    },{
+        "country": "China, mainland",
+        "production": 192781000,
+        "world_percentage": 21.8
+    },{
+        "country": "Brazil",
+        "production": 55660415,
+        "world_percentage": 6.3
+    },{
+        "country": "Argentina",
+        "production": 23799830,
+        "world_percentage": 2.7
+    },{
+        "country": "Ukraine",
+        "production": 22837900,
+        "world_percentage": 2.6
+    },{
+        "country": "India",
+        "production": 21760000,
+        "world_percentage": 2.5
+    },{
+        "country": "Other",
+        "production": 144228014,
+        "world_percentage": 28.6
+    }]
+}
