@@ -41,7 +41,7 @@ fetch( "../data.json" )
         
         //Convert json to be read by Google Chart
         let data = new google.visualization.DataTable();
-        data.addColumn('number', 'Year');
+        data.addColumn('string', 'Year');
         data.addColumn('number', '0 to 14 years');
         data.addColumn('number', '65 years and older');
 
@@ -51,7 +51,7 @@ fetch( "../data.json" )
             
             let values = jsonData.population[key];
             
-            _data.push([Number(key), values._0_to_14_years , values._65_years_and_older]);
+            _data.push([key, values._0_to_14_years , values._65_years_and_older]);
             
         }
 
