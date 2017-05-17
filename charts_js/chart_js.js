@@ -48,18 +48,8 @@ fetch( "../data.json" )
     
     
     function drawLineChart(){
-        /*
-         for (let key in jsonData.population){
-             
-             let values = jsonData.population[key];
-            
-             let data_1 = jsonData.corn_population.map( function(item) {return item.values._0_to_14_years});
-             
-             let data_2 = jsonData.corn_population.map( function(item) {return item.values._65_years_and_older});
-             
-        }
-        */
-        let lable = [];
+
+        let label = [];
         let data_1 = [];
         let data_2 = [];
         
@@ -69,7 +59,7 @@ fetch( "../data.json" )
             
             
             //_data.push([Number(key), values._0_to_14_years , values._65_years_and_older]);
-            lable.push(key);
+            label.push(key);
             data_1.push(values._0_to_14_years);
             data_2.push(values._65_years_and_older)
         }
@@ -77,7 +67,7 @@ fetch( "../data.json" )
         var lineChart = new Chart(document.getElementById("lineChart"),{
             type : 'line',
             data : {
-                labels: lable,
+                labels: label,
                 datasets: [
                     {
                         label: "0 to 14 years",
