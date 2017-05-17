@@ -54,7 +54,7 @@ fetch( "../data.json" )
             let animationDefinition = {
                 'stroke-dashoffset': {
                     id: 'anim' + data.index,
-                    dur: 1000,
+                    dur: 300,
                     from: -pathLength + 'px',
                     to:  '0px',
                     easing: Chartist.Svg.Easing.easeOutQuint,
@@ -116,8 +116,8 @@ fetch( "../data.json" )
       
     //animation (http://gionkunz.github.io/chartist-js/examples.html)
     let seq = 0,
-    delays = 80,
-    durations = 500;
+    delays = 30,
+    durations = 200;
 
     lineChart.on('created', function() {
         seq = 0;
@@ -129,7 +129,7 @@ fetch( "../data.json" )
         if(data.type === 'line') {
             data.element.animate({
                 opacity: {
-                    begin: seq * delays + 1000,
+                    begin: seq * delays + 500,
                     dur: durations,
                     from: 0,
                     to: 1
@@ -140,7 +140,7 @@ fetch( "../data.json" )
                 y: {
                     begin: seq * delays,
                     dur: durations,
-                    from: data.y + 100,
+                    from: data.y + 70,
                     to: data.y,
                     easing: 'easeOutQuart'
                 }
@@ -150,7 +150,7 @@ fetch( "../data.json" )
                 x: {
                     begin: seq * delays,
                     dur: durations,
-                    from: data.x - 100,
+                    from: data.x - 70,
                     to: data.x,
                     easing: 'easeOutQuart'
                 }
@@ -191,7 +191,7 @@ fetch( "../data.json" )
             let pos2Animation = {
                 begin: seq * delays,
                 dur: durations,
-                from: data[data.axis.units.pos + '2'] - 100,
+                from: data[data.axis.units.pos + '2'] - 70,
                 to: data[data.axis.units.pos + '2'],
                 easing: 'easeOutQuart'
             };
